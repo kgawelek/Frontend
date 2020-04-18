@@ -1,0 +1,127 @@
+body{
+    --lewyKolor: #D3DC55;
+    background-image: linear-gradient(to right, deepskyblue, var(--lewyKolor));
+    font-family: Arial;
+
+}
+
+body header{
+    color: crimson;
+    font-family: Arial;
+    font-style: italic;
+    text-align: center;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 30px;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+a{
+    color: black;
+}
+
+.foto_tytul{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes do_osiagniec {
+    from {
+        color: rgba(142, 4, 0, 0.99);
+        background-color: var(--lewyKolor);
+        box-shadow: 10px 10px 10px #060601;
+        width: 60%;
+        height: 200px;
+        border-radius: 7%;
+    }
+    to{}
+}
+
+#osiagniecia{
+    border:  5px red;
+    border-style: double;
+    margin: 20px;
+    padding: 25px;
+    list-style-type: square;
+    width: 50%;
+    height: 150px;
+    box-shadow: 5px 5px 5px #060601;
+    border-radius: 5%;
+    transition: width 1s ease-out, height 1s ease-out,
+    border-radius 1s ease-out, box-shadow 1s ease-out;
+    animation-name: do_osiagniec;
+    animation-duration: 4s;
+}
+
+#osiagniecia:hover{
+    color: rgba(142, 4, 0, 0.99);
+    background-color: var(--lewyKolor);
+    box-shadow: 10px 10px 10px #060601;
+    width: 60%;
+    height: 200px;
+    border-radius: 7%;
+}
+
+.stopka {
+    border: 3px red;
+    border-style: double;
+    padding: 5px;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    background-color: red;
+    border-radius: 5px;
+}
+
+#przycisk{
+    border: 5px solid red;
+    background-color: red;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+    padding: 1px;
+    margin: 20px;
+}
+
+#main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@keyframes do_tekstu {
+    from {background-color: var(--lewyKolor)}
+    to {background-color: unset}
+}
+
+.tekst{
+    border: red;
+    border-style: double;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    box-shadow: 5px 5px 5px #060601;
+    border-radius: 10px;
+    transition: width 10ms ease-out, border-radius 10ms ease-out, box-shadow 10ms ease-out;
+    animation-name: do_tekstu;
+    animation-duration: 4s;
+}
+
+.tekst:hover{
+    color: rgba(142, 4, 0, 0.99);
+    background-color: var(--lewyKolor);
+    box-shadow: 10px 10px 10px #060601;
+    width: 400px;
+    border-radius: 15px;
+}
+
+
+
+

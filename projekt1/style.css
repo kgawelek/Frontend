@@ -1,0 +1,68 @@
+body{
+    --greenColor: #66cc2b;
+    background-color: var(--greenColor);
+}
+
+a{
+    color: var(--greenColor);
+}
+
+.nawigacja {
+    margin-right: 150px;
+    margin-left: 150px;
+    height: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+}
+.przycisk{
+    color: white;
+    padding: 10px 50px 10px 50px;
+    text-align: center;
+}
+
+.przycisk:hover{
+    background-color: #efffec;
+    color: var(--greenColor);
+    border-radius: 5px;
+}
+
+#main_banner{
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.teksty{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #4d4d4d;
+    color: white;
+    font-size: larger;
+    border-radius: 10px;
+}
+
+.tytul{
+    color: var(--greenColor);
+}
+
+.tekstLewy{
+    margin: 40px 60px 40px 60px;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.tekstPrawy{
+    margin: 180px 40px 20px 40px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+}
+
+.zdjecia{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
