@@ -1,35 +1,60 @@
 body{
     --lewyKolor: #D3DC55;
-    background-image: linear-gradient(to right, deepskyblue, var(--lewyKolor));
+    background-image: linear-gradient(to right, #00a2ff, #4ed3f5);
     font-family: Arial;
-
+    font-size: larger;
+    margin: 3%;
+    padding: 10px;
 }
 
 body header{
     color: crimson;
     font-family: Arial;
     font-style: italic;
-    text-align: center;
+    display: flex;
+    
 }
 
 h1{
     font-weight: 700;
-    font-size: 30px;
+    font-size: 50px;
+    margin: 10px;
 }
 
 h2{
     font-weight: 700;
-    font-size: 20px;
+    font-size: 30px;
+    color: crimson;
 }
 
 a{
     color: black;
+    text-decoration: none;
 }
 
-.foto_tytul{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.nawigacja {
+
+    text-align: center;
+    background-color: crimson;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+    border-radius: 10px;
+    margin: 10px;
+
+}
+.przycisk{
+    color: white;
+    padding: 10px 50px 10px 50px;
+    margin: 10px 0px;
+    text-align: center;
+    font-size: larger;
+}
+
+.przycisk:hover{
+    background-color: #efffec;
+    color: crimson;
+    border-radius: 5px;
 }
 
 @keyframes do_osiagniec {
@@ -39,7 +64,8 @@ a{
         box-shadow: 10px 10px 10px #060601;
         width: 60%;
         height: 200px;
-        border-radius: 7%;
+        border-radius: 15px;
+        transition: ease-out;
     }
     to{}
 }
@@ -47,13 +73,13 @@ a{
 #osiagniecia{
     border:  5px red;
     border-style: double;
-    margin: 20px;
-    padding: 25px;
+    padding: 30px;
+    padding-bottom: 40px;
     list-style-type: square;
     width: 50%;
     height: 150px;
     box-shadow: 5px 5px 5px #060601;
-    border-radius: 5%;
+    border-radius: 10px;
     transition: width 1s ease-out, height 1s ease-out,
     border-radius 1s ease-out, box-shadow 1s ease-out;
     animation-name: do_osiagniec;
@@ -66,7 +92,7 @@ a{
     box-shadow: 10px 10px 10px #060601;
     width: 60%;
     height: 200px;
-    border-radius: 7%;
+    border-radius: 15px;
 }
 
 .stopka {

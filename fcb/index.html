@@ -1,37 +1,54 @@
 <!DOCTYPE html>
 <html lang="pl">
+    <!-- Pierwsza stworzona strona -->  
     <head>
         <meta charset="UTF-8">
         <meta name="description", content="Pierwsza strona">
         <link  rel="shortcut icon" href="fcblogo.png">
         <title>FCB</title>
         <link rel="stylesheet" href="kurs1.css">
-        <script src="kurs1.js"></script>
+        
     </head>
     <body>
         <header>
             <h1 class="tytul"> FC Barcelona </h1>
             <img src="fcblogo.png" width="100" title="Logo klubu" alt="Herb FCB" class="foto_tytul">
-            <h2 id="podtytul">Blaugrana, Barca, Duma Kataloni</h2>
+            
         </header>
+        <div class="nawigacja">
+            <a href="https://pl.wikipedia.org/wiki/FC_Barcelona" target="_blank">
+                <div class="przycisk" id="community">
+                    Wikipedia
+                </div>
+            </a>
+            <a href="historia_fcb.html">
+                <div class="przycisk">
+                    Historia
+                </div>
+            </a>
+            <a href="camp_nou.html">
+                <div class="przycisk">
+                    Stadion
+                </div>
+            </a>
+            <script type="text/javascript">
+                function direct(address){
+                    location.href = address;
+                }
+            </script>
+             <a onclick="direct('https//www.facebook.com/profile.php?id=100002027964688')" href="#"target="_blank">
+                <div class="przycisk">
+                    Kontakt
+                </div>
+            </a>
+        </div>
         <div style="width: 75%">
+            <h2 id="podtytul">Blaugrana, Barca, Duma Kataloni</h2>
             <p class="opis">hiszpański wielosekcyjny klub sportowy,
                 istniejący od chwili założenia drużyny piłkarskiej.
                 Założony w 1899 roku przez grupę Szwajcarów, Anglików i Hiszpanów,
                 z czasem stał się katalońską instytucją o dużym znaczeniu społecznym.
-                <br><br>Pełna historia klubu:
-                <br>
-                <a href="https://pl.wikipedia.org/wiki/FC_Barcelona" target="_blank">Strona  o FC Barcelonie na wikipedii</a><br>
-                <script type="text/javascript">
-                    function direct(address) {
-
-                        location.href = address;
-                    }
-                </script>
-
-                <a onclick="direct('https://pl.wikipedia.org/wiki/FC_Barcelona')" href="#">test</a>
-                <br>
-                <a href="historia_fcb.html">Historia klubu</a>
+                
                 <br>Jego dewiza to Més que un club (pol. Więcej niż klub).
             </p>
         </div>
@@ -48,24 +65,18 @@
                 </ul>
             </p>
         </div>
-        <p>
-            Stadionem domowym klubu jest obecnie Camp Nou.
-            <br> <a href="camp_nou.html">Więcej o stadionie</a>
-        </p>
-        <form>
-            <input type="text" placeholder="wyszukiwanie">
-            <button>Szukaj</button>
-            <br>
-        </form>
+        <section>
+            <form id="szukanie">
+                <input type="text" placeholder="wyszukiwanie">
+                <button id="szukaj">Szukaj</button>
+            </form>
+        </section>
         <br>
 
     <div class="stopka">
         autor: Konrad Gawełek
     </div>
-    <a onclick="direct('https://www.facebook.com/profile.php?id=100002027964688')" href="#"target="_blank">
-        <div id="przycisk">
-            Kontakt
-        </div>
-    </a>
+   
     </body>
+    <script src="kurs1.js"></script>
 </html>
