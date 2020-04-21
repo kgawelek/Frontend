@@ -32,6 +32,10 @@ a{
     text-decoration: none;
 }
 
+.wyszukany{
+    background-color: #00a2ff;
+    }
+
 .nawigacja {
 
     text-align: center;

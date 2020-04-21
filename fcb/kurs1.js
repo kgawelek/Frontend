@@ -27,16 +27,29 @@ szukaj.addEventListener('click', function(e){
 
 const formularz = document.forms['szukanie'];
 
-formularz.addEventListener('submit', function(e){
-    e.preventDefault();
-    const szukane = formularz.querySelector('input[type="text"]').value;
-    console.log('szukane :', szukane);
-    formularz.querySelector('input[type="text"]').value = '';
+formularz.addEventListener('submit', 
+    function(e){
+        e.preventDefault();
+        const szukane = formularz.querySelector('input[type="text"]').value;
+        console.log('szukane :', szukane);
+        formularz.querySelector('input[type="text"]').value = '';
 
-    const nawigacja = Array.from(document.querySelectorAll('.nawigacja div.przycisk'));
-    for(let i = 0; i < nawigacja.length; i++){
-        if((nawigacja[i].innerText).toLowerCase() == szukane.toLowerCase()){
-           console.log('znaleziono');
+        const nawigacja = Array.from(document.querySelectorAll('.nawigacja div.przycisk'));
+        for(let i = 0; i < nawigacja.length; i++){
+            if((nawigacja[i].innerText).toLowerCase() == szukane.toLowerCase()){
+            console.log('znaleziono');
+            nawigacja[i].classList.add('wyszukany');
+            }
         }
-    }
 });
+
+let czas = document.querySelector('.czas');
+
+intervalCzasu = setInterval(aktualizujCzas, 1000);
+
+function aktualizujCzas(){
+    let data = new Date();
+    
+    czas.innerText = data.getHours() + ':' + data.getMinutes() + ':' + data.getSeconds();
+    console.log('czas :', czas);
+}
