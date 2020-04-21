@@ -38,3 +38,15 @@ header{
 #zwyciezca{
     font-weight: 900; 
 }
+
+#reset{
+    background-color: crimson;
+    color: white;
+    font-size: large;
+    border: 1px solid red;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    width: 100px;
+    text-decoration: none;
+}
