@@ -9,6 +9,11 @@ h1{
 
 }
 
+#result{
+  font-size: 40px;
+  text-align: center;
+}
+
 .game{
   display: grid;
   grid-template-columns: auto auto auto;
@@ -32,4 +37,15 @@ h1{
   font-size: 60px;
 }
 
-
+#random_choice{
+  background-color: rgb(46, 199, 0);
+  color: #575757;
+  border-radius: 5px;
+  margin: 20px 0;
+  padding: 20px;
+  font-size: 50px;
+  text-align: center;
+  width: 100px;
+  align-items: center;
+  line-height: 500px;
+}
