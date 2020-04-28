@@ -37,6 +37,10 @@ h2{
   width: 100px;
 }
 
+.user_choice:hover{
+  background-color: rgb(220, 20, 20);
+}
+
 #vs{
   line-height: 600px;
   font-size: 60px;
