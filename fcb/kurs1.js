@@ -53,3 +53,11 @@ function aktualizujCzas(){
     czas.innerText = data.getHours() + ':' + data.getMinutes() + ':' + data.getSeconds();
     console.log('czas :', czas);
 }
+
+$("#wikipedia").click(function(){
+    alert("Przejdziesz na zewnetrzna strone!")
+})
+
+// $('.foto_tytul').click(function(){
+//     $(this).hide();
+// })

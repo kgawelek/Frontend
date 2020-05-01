@@ -81,13 +81,11 @@ a{
     padding-bottom: 40px;
     list-style-type: square;
     width: 50%;
-    height: 150px;
     box-shadow: 5px 5px 5px #060601;
     border-radius: 10px;
     transition: width 1s ease-out, height 1s ease-out,
     border-radius 1s ease-out, box-shadow 1s ease-out;
-    animation-name: do_osiagniec;
-    animation-duration: 4s;
+    
 }
 
 #osiagniecia:hover{
@@ -95,7 +93,6 @@ a{
     background-color: var(--lewyKolor);
     box-shadow: 10px 10px 10px #060601;
     width: 60%;
-    height: 200px;
     border-radius: 15px;
 }
 
