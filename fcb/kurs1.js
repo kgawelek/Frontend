@@ -6,13 +6,13 @@ console.log('linki :', linki);
 console.log(arr);
 console.log(Array.isArray(arr));
 
-const nawigacja = Array.from(document.querySelectorAll('.nawigacja div.przycisk'));
-console.log('nawigacja :', nawigacja);
-for(let i = 0; i < nawigacja.length; i++){
-    if((nawigacja[i].innerText).toString() == "Kontakt"){
-        nawigacja[i].textContent = "Facebook" 
-    }
-}
+// const nawigacja = Array.from(document.querySelectorAll('.nawigacja div.przycisk'));
+// console.log('nawigacja :', nawigacja);
+// for(let i = 0; i < nawigacja.length; i++){
+//     if((nawigacja[i].innerText).toString() == "Kontakt"){
+//         nawigacja[i].textContent = "Facebook" 
+//     }
+// }
 
 const podtytul = document.querySelector("#podtytul");
 const temp = document.createElement('p');
